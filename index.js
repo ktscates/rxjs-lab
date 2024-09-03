@@ -42,6 +42,6 @@ const error$ = new Observable((observer) => {
 });
 error$.subscribe({
   next: (value) => console.log(`Task 5 - Value: ${value}`),
-  error: (err) => console.error(`Task 5 - Error: ${err}`),
+  error: (error) => console.error(`Task 5 - Error: ${error}`),
   complete: () => console.log("Task 5 - No log, an error occured"),
 });
